@@ -68,12 +68,13 @@ a:focus {
 .navbar-brand {
   height: 40px;
   padding: 5px 15px;
+  font-weight: 600;
   font-size: 18px;
   line-height: 1em;
 }
 
 .navbar-brand h1{
-	color: #fff;
+	color: #696868;
   font-size: 20px;
   line-height: 40px;
 }
@@ -300,16 +301,24 @@ hr {
 /* ===========================
 --- Intro
 ============================ */
-
 .intro {
 	width:100%;
+    height: 100%;
 	position:relative;
-	
-	background: url(../img/bg1.jpg) no-repeat top center;
+    margin-top: 30px;
+    background-size: 100% 100%;
+	background: url(../img/cows/background.png) no-repeat center top;
 }
 
+/* .bg {
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    position:relative;
+} */
+
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:10% 0 0 0;
 }
 
 .intro .slogan {
@@ -330,7 +339,7 @@ hr {
 }
 
 .intro .slogan h2 {
-	color: #FFF;
+	color: hwb(0 35% 64%);
 	text-shadow: none;
 	font-size: 60px;
 	line-height: 60px;
@@ -340,14 +349,16 @@ hr {
 	text-decoration: none;
 	text-transform: uppercase;
 	border-width: 0px;
-	border-color: #000;
+	border-color: #000000d0;
 	border-style: none;
 	text-shadow: -1px 0 1px #000;
 }
 
 .intro .slogan h4 {
-	color: #fff;
+	color: #ece6e6;
 	text-shadow: -1px 1px 1px #000;
+	font-weight: 700;
+	font-size: 30px;
 }
 
 

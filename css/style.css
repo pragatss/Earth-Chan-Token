@@ -196,17 +196,6 @@ a:focus {
     z-index: 999;
 }
 
-
-#loaderInner {
-    background:#ffffff url(../img/spinner.gif) center center no-repeat;
-    height: 60px;
-    left: 50%;
-    margin: -50px 0 0 -50px;
-    position: absolute;
-    top: 50%;
-    width: 60px;
-}
-
 @keyframes boxSpin{
   0%{
     transform: translate(-10px, 0px);
@@ -284,6 +273,8 @@ hr {
 	display:block;
     position:relative;
     z-index:120;
+    font-size: 13px;
+
 }
 
 ul {
@@ -295,9 +286,6 @@ ul {
 	font-size: 40px;
 }
 
-.home-section{
-    font-size: 13px;
-}
 .section-heading i {
 	margin-bottom: 20px;
 }
@@ -309,23 +297,8 @@ ul {
 
 /* --- section bg var --- */
 
-.bg-white {
-	background: #fff;
-}
-
 .bg-gray {
 	background: #f8f8f8;
-}
-
-
-.bg-dark {
-	background: #575757;
-}
-
-/* --- section color var --- */
-
-.text-light {
-	color: #fff;
 }
 
 
@@ -343,24 +316,29 @@ ul {
 	background: url(../img/earth/background6_out.png) no-repeat center top;
 }
 
-.intro.background {
+.home.background {
 	background: url(../img/earth/background6_out.png) no-repeat center top;
+    height: 100%;
+    width: 100%;
 }
 
 .roadmap {
 	background: url(../img/earth/roadmap-background.png) no-repeat center top;
 }
 
-.green{
+.green {
     color:green !important;
 }
 
-.logo{
+.main.logo {
     height: 40px;
     width: 80px;
     border-radius: 60px;
 }
 
+.rad {
+    border-radius: 150px;
+}
 .buy-button {
     width: 150px;
     height: 50px;
@@ -370,34 +348,26 @@ ul {
     color: green;
 }
 
-.image-size{
-    width: 300px;
-    height: 150x;
+.image-size {
+    width: 200px;
+    height: 100x;
     border-radius: 80px;
    text-align: left;
 }
 
-.image-size-2{
+.image-size-2 {
     width: 350px;
     height: 225px;
     border-radius: 80px;
    text-align: left;
 }
 
-
-.a.button{
+.a.button {
     padding-top: 10px;
     height: 40px;
     width: 140px;
     text-align: center;
     border-radius: 20px;
-}
-
-.image-size{
-    width: 200px;
-    height: 100x;
-    border-radius: 80px;
-   text-align: left;
 }
 
 .image-size-roadmap{
@@ -407,28 +377,18 @@ ul {
    text-align: left;
 }
 
-/* .bg {
-    width: 100%;
-    height: 100%;
-    z-index: -100;
-    position:relative;
-} */
-
 #intro.intro {
 	padding:3% 0 0 0;
-}
-
-.intro .slogan {
-	text-align: center;
-    padding-top: 25%;
 }
 
 .intro .page-scroll {
 	text-align: center;
 }
 
-.brand-heading {
-    font-size: 40px;
+.position.bottom{
+    position:absolute;
+    bottom: 0px;
+    left: 30%;
 }
 
 .intro-text {
@@ -474,6 +434,11 @@ ul {
 	font-size: 30px;
 }
 
+.social.logo {
+    width: 100px;
+    height: 60px;
+}
+
 
 /* ===========================
 --- About
@@ -499,11 +464,7 @@ ul {
 .team-social {
 	margin-left: 0;
 	padding-left: 0;
-	
-}
-
-.team-social {
-	text-align: center;
+    text-align: center;
 }
 
 .team-social li{
@@ -526,24 +487,12 @@ ul {
     -webkit-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
+
 .team-social a i{
 	text-align: center;
 	margin:0;
 	padding:0;
 }
-.team-social .social-facebook a{background: #3873ae;}
-.team-social .social-twitter a{background: #62c6f8;}
-.team-social .social-dribble a{background: #d74980;}
-.team-social .social-deviantart a{background: #8da356;}
-.team-social .social-google a{background: #000;}
-.team-social .social-vimeo a{background: #51a6d3;}
-.team-social .social-facebook a:hover{background: #4893ce;}
-.team-social .social-twitter a:hover{background: #82e6ff;}
-.team-social .social-dribble a:hover{background: #f769a0;}
-.team-social .social-deviantart a:hover{background: #adc376;}
-.team-social .social-google a:hover{background: #333;}
-.team-social .social-vimeo a:hover{background: #71c6f3;}
-
 
 /* ===========================
 --- Services
@@ -553,36 +502,9 @@ ul {
 	margin-bottom: 20px;
 }	
 
-
-
 /* ===========================
 --- Contact
 ============================ */
-
-form#contact-form .form-group label {
-	text-align: left !important;
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-	font-size: 12px;
-}
-form#contact-form input,form#contact-form select,form#contact-form textarea {
-	border-radius: 0;
-	border: 1px solid #eee;
-  -webkit-box-shadow: none;
-          box-shadow:  none;
-}
-
-form#contact-form input:focus,form#contact-form select:focus,form#contact-form textarea:focus {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
-}
-.input-group-addon {
-  background-color: #fefefe;
-  border: 1px solid #eee;
-  border-radius: 0;
-}
-
 .company-social li{
     display: inline-block;
 	margin:0 !important;
@@ -591,6 +513,7 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 .padding-remove {
     padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 .company-social a{
@@ -611,19 +534,6 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	margin:0;
 	padding:0;
 }
-.company-social .social-facebook a{background: #3873ae;}
-.company-social .social-twitter a{background: #62c6f8;}
-.company-social .social-dribble a{background: #d74980;}
-.company-social .social-deviantart a{background: #8da356;}
-.company-social .social-google a{background: #000;}
-.company-social .social-vimeo a{background: #51a6d3;}
-.company-social .social-facebook a:hover{background: #4893ce;}
-.company-social .social-twitter a:hover{background: #82e6ff;}
-.company-social .social-dribble a:hover{background: #f769a0;}
-.company-social .social-deviantart a:hover{background: #adc376;}
-.company-social .social-google a:hover{background: #333;}
-.company-social .social-vimeo a:hover{background: #71c6f3;}
-
 
 
 /* ===========================
@@ -852,11 +762,6 @@ Parallax
         height: 100%;
         padding: 0;
     }
-
-    .brand-heading {
-        font-size: 100px;
-    }
-	
 
     .intro-text {
         font-size: 25px;

@@ -62,6 +62,26 @@ a:focus {
 	
 }
 
+.rainbow {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: -4px 4px #ef3550,
+                 -8px 8px #f48fb1,
+                 -12px 12px #7e57c2,
+                 -16px 16px #2196f3,
+                 -20px 20px #26c6da,
+                 -24px 24px #43a047,
+                 -28px 28px #eeff41,
+                 -32px 32px #f9a825,
+                 -36px 36px #ff5722;
+  }
+
 .navbar-brand {
     font-weight: 700;
 }
@@ -266,14 +286,26 @@ hr {
     z-index:120;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0%;
+  }
 
 .section-heading h2 {
 	font-size: 40px;
+}
+
+.home-section{
+    font-size: 13px;
 }
 .section-heading i {
 	margin-bottom: 20px;
 }
 
+.center{
+    display: inline-block;
+    margin: 0 auto;
+}
 
 /* --- section bg var --- */
 
@@ -307,7 +339,72 @@ hr {
 	position:relative;
     margin-top: 30px;
     background-size: 100% 100%;
-	background: url(../img/cows/background.png) no-repeat center top;
+    border-radius: 400px;
+	background: url(../img/earth/background6_out.png) no-repeat center top;
+}
+
+.intro.background {
+	background: url(../img/earth/background6_out.png) no-repeat center top;
+}
+
+.roadmap {
+	background: url(../img/earth/roadmap-background.png) no-repeat center top;
+}
+
+.green{
+    color:green !important;
+}
+
+.logo{
+    height: 40px;
+    width: 80px;
+    border-radius: 60px;
+}
+
+.buy-button {
+    width: 150px;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: green;
+}
+
+.image-size{
+    width: 300px;
+    height: 150x;
+    border-radius: 80px;
+   text-align: left;
+}
+
+.image-size-2{
+    width: 350px;
+    height: 225px;
+    border-radius: 80px;
+   text-align: left;
+}
+
+
+.a.button{
+    padding-top: 10px;
+    height: 40px;
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.image-size{
+    width: 200px;
+    height: 100x;
+    border-radius: 80px;
+   text-align: left;
+}
+
+.image-size-roadmap{
+    width: 100px;
+    height: 50px;
+    border-radius: 80px;
+   text-align: left;
 }
 
 /* .bg {
@@ -318,12 +415,12 @@ hr {
 } */
 
 #intro.intro {
-	padding:10% 0 0 0;
+	padding:3% 0 0 0;
 }
 
 .intro .slogan {
 	text-align: center;
-
+    padding-top: 25%;
 }
 
 .intro .page-scroll {
@@ -338,10 +435,26 @@ hr {
     font-size: 18px;
 }
 
-.intro .slogan h2 {
-	color: hwb(0 35% 64%);
+.intro .slogan h1 {
+	color:green;
 	text-shadow: none;
-	font-size: 60px;
+	font-size: 16px;
+	line-height: 60px;
+	font-weight: 700;
+	font-family: Montserrat, sans-serif;
+	background-color: rgba(0, 0, 0, 0);
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 0px;
+	border-color: #000000d0;
+	border-style: none;
+	text-shadow: -1px 0 1px #000;
+}
+
+.intro .slogan > h2 {
+	color:green;
+	text-shadow: none;
+	font-size: 26px;
 	line-height: 60px;
 	font-weight: 700;
 	font-family: Montserrat, sans-serif;
@@ -355,7 +468,7 @@ hr {
 }
 
 .intro .slogan h4 {
-	color: #ece6e6;
+	color:green;
 	text-shadow: -1px 1px 1px #000;
 	font-weight: 700;
 	font-size: 30px;
@@ -470,27 +583,15 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
   border-radius: 0;
 }
 
-.widget-contact {
-	text-align: left;
-}
-
-
-.company-social {
-	margin-left: 0;
-	padding-left: 0;
-	margin-top: 10px;
-}
-
-.company-social {
-	text-align: left;
-}
-
 .company-social li{
     display: inline-block;
 	margin:0 !important;
 	padding:0;
 }
 
+.padding-remove {
+    padding-top: 0px !important;
+}
 
 .company-social a{
 	margin:0;

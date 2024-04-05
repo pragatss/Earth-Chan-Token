@@ -5,6 +5,10 @@
 	jQuery(window).load(function() { 
 		jQuery("#preloader").delay(100).fadeOut("slow");
 		jQuery("#load").delay(100).fadeOut("slow");
+		var width = $(".navbar-fixed-top").width();
+		if(width <= 768){
+			$(".navbar-fixed-top").addClass("top-nav-collapse");
+		}
 	});
 
 

@@ -368,6 +368,13 @@ ul {
    text-align: left;
 }
 
+.tokenomics {
+    width: 60%;
+    height: 60%;
+    border-radius: 40px;
+    text-align: left;
+}
+
 .a.button {
     padding-top: 10px;
     height: 40px;

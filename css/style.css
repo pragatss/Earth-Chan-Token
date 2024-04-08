@@ -770,6 +770,11 @@ Parallax
     margin-top: 0;
 }
 
+.whitepaper{
+    width: 200px;
+    height: 40px;
+}
+
 
 /* Media queries */
 
